@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>電腦動畫作品集</title>
-    <script src="http://d3js.org/d3.v6.min.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">    <script src="http://d3js.org/d3.v6.min.js" charset="utf-8"></script>
     <style type="text/css">
       @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap');
 
@@ -54,20 +56,96 @@
 <h1> 109-2 電腦動畫 作品集 </h1>
 
 <div>
-  [檔案] <a href="https://github.com/君の名は/vis2021s/">https://github.com/君の名は/ca2021s/</a>
+  [檔案] <a href="https://github.com/95leohuang/ca2021s">https://github.com/95leohuang/ca2021s</a>
   <hr>
-  [網頁] <a href="https://君の名は.github.io/vis2021s/">https://君の名は.github.io/ca2021s/</a>
+  [網頁] <a href="https://95leohuang.github.io/ca2021s/">https://95leohuang.github.io/ca2021s</a>
 </div>
 
 
 <h3> lab 1: VRoid + Mixamo </h3>
 <div>
-  心得: (約50字)
+  <p style="position:relative;  left: 20px;font-size:24px; text-decoration: underline;">心得:</p>
+  <span style="position:relative;  left: 50px;">
+    <p style="font-size:20px; text-decoration: underline;">模型製作&nbsp;：&nbsp;VRoid + Blender:</p>
+    <p style="font-size:15px;">&nbsp;&nbsp;學習如何從VRoid中製作出想要的人物模型、在VRoid中完成製作後匯出成.vrm檔後，再將其匯入到Blender上進行轉檔的動作，使用Blender中開源的Cats Blender Plugin，把.vrm檔轉檔成支援Unity使用的.fbx檔。</p> 
+    <p style="font-size:20px; text-decoration: underline;">角色動畫&nbsp;：&nbsp;Mixamo + actorcore</p>
+    <p style="font-size:15px;">&nbsp;&nbsp;從Adobe mixamo大量的免費角色動畫檔中選擇適合使用的動畫，另外我也使用Reallusion actorcore中免費的角色動畫檔</p> 
+    <p style="font-size:20px; text-decoration: underline;">Unity&nbsp;：&nbsp;Sequence + Cinemachine + Recorder </p>
+    <p style="font-size:15px;">&nbsp;&nbsp;利用Unity的工具和package完成動畫的製作與錄製，使用Sequence調整電腦動畫的時間軸結合Cinemachine攝影機的Plugin進行攝影機運鏡，最後再使用Unity Recorder把動畫錄製成影像檔</p> 
+  </span>
+  
 </div>
 <div>
-    <iframe width="560" height="315" src="video/firstcut.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="1080" height="720" src="https://www.youtube.com/embed/NxdwzCeK-sA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+  <span class="row">
+    <span class="col-md-1"style="margin: 0%;"></span>
+    <div class="col-md-6" style="margin: 0%;"> 
+      <h2 style="text-decoration: underline;">Video from:</h2>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><img src="https://www.youtube.com/s/desktop/4fc9328c/img/favicon.ico"/>  Youtube</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><img src="https://s2.aconvert.com/convert/p3r68-cdx67/asehu-ejo3o-001.ico"/>  Github</button>
+        </li>
+      </ul>
 
+      <span class=" tab-content" id="myTabContent">
+        <span class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <iframe width="100%" height="720" src="https://www.youtube.com/embed/NxdwzCeK-sA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
+        </span>
+        <span class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <embed src="video/firstcut.mp4" width="1080" height="720">
+        </span>
+      </span>
+    </div>
+  
+    <div class="col-md-4" style="margin: 0%;"> 
+      <p>
+      <h2 style="text-decoration: underline;"> 內容</h2>
+      <br>
+      ▶︎　時間戳
+      <br>
+      0:00​ - Start  
+      <br>
+      0:08​ - 第一個分鏡
+      <br>
+      0:32​ - 第一個分鏡
+      <br>
+      1:17 - 音樂結束
+      <br>
+      <br>
+      <br>
+      ▶︎　音楽
+      <br>
+      <a href="https://youtu.be/cjTFoDZVNsk">日本和服 - 古典舞蹈 (speed*1.25)</a>
+      <br>
+      <a href="https://youtu.be/CF_C13iPvOg">Streets around Shibuya Station at night / 夜の渋谷 / Tokyo HD</a>
+      <br>
+      <br>
+      <br>
+      ▶︎　場地
+      <br>
+      <a href="https://assetstore.unity.com/packages/3d/environments/urban/japanese-alley-162907"> Unity Assets - Japanese Alley </a>
+      <br>
+      <br>
+      <br>      
+      ▶︎　動作
+      <br>      
+      閒置動作 ：<a href="https://actorcore.reallusion.com/free?asset=idle_251087">actorcore - Idle </a>
+      <br>
+      揮手動作 ：<a href="https://www.mixamo.com/#/?page=1&query=standing+greeting">Mixamo - Standing Greeting </a>
+      <br>
+      舞蹈動作 ：<a href="https://actorcore.reallusion.com/free?asset=dance-graceful_250999">actorcore - Dance graceful </a>
+      <br>
+      鞠躬動作(炭治郎) ：<a href="https://www.mixamo.com/#/?page=1&query=quitck+formal+bow">Mixamo - Quick Formal Bow</a>
+      <br>
+      鞠躬動作(禰豆子) ：<a href="https://www.mixamo.com/#/?page=1&query=thankful">Mixamo - Thankful</a>
+    </div>
+    
+    <span class="col-md-1"style="margin: 0%;"></span>
+  </span>
+</div>
 
 <h3> lab 2: MMD + Mixamo </h3>
 <div>
