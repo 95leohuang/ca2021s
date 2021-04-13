@@ -567,8 +567,8 @@ $
 			(
 				400,
 				40,
-				0xE5E5E5,
-				0xE5E5E5
+				0x800000,
+				0x800000
 			);
 			gridHelper.visible = false;
 			scene.add(gridHelper);
@@ -826,7 +826,7 @@ $
 			*/
 			scene.fog = new THREE.Fog
 			(
-				0xffffff,
+				0xC0C0C0,
 				150 * 0.5,
 				150
 			);
