@@ -556,10 +556,10 @@ $
 			/*
 				環境光
 			*/
-			var ambientLight = new THREE.AmbientLight(0xeeeeee);
+			var ambientLight = new THREE.AmbientLight(0xffffff);
+			ambientLight.intensity = 0.85;
 			scene.add(ambientLight);
-			
-			
+
 			/*
 				グリッド
 			*/
