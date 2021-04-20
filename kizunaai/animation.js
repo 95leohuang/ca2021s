@@ -402,7 +402,7 @@ $
 		/*
 			物理演算
 		*/
-		var isPhysics = false;
+		var isPhysics = true;
 
 		if (urlParameters.physics == 'on')
 		{
@@ -566,9 +566,9 @@ $
 			var gridHelper = new THREE.GridHelper
 			(
 				400,
-				40,
-				0x800000,
-				0x800000
+				400,
+				0x000000,
+				0x000000
 			);
 			gridHelper.visible = false;
 			scene.add(gridHelper);
@@ -826,7 +826,7 @@ $
 			*/
 			scene.fog = new THREE.Fog
 			(
-				0xC0C0C0,
+				0xFFFFFF,
 				150 * 0.5,
 				150
 			);
