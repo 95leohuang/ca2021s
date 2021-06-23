@@ -165,6 +165,24 @@ h1 .logo {
     }
 }
 
+.gif {
+    width: 100%;
+    background-color: slategray;
+    color: blanchedalmond
+}
+
+#more {
+    display: none;
+}
+
+#readmore {
+    color: rgb(121, 200, 253);
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: 'cwTeXKai', serif;
+}
+
 #nav {
     background: url("http://thumb1.shutterstock.com/display_pic_with_logo/1487123/134611310/stock-vector-colorful-geometric-background-with-triangles-vector-eps-134611310.jpg");
     position: fixed;

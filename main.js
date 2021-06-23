@@ -18,6 +18,40 @@ function playLink(d) {
     $('#video2_' + d).addClass("hidden")
 }
 
+function playGif(d) {
+    $('#gif').attr('src', '/gif/' + d + '.gif');
+    let producer = ""
+    switch (d) {
+        case '1':
+        case '5':
+        case '6':
+            producer = "製作人：黃子洋"
+            break;
+        case '2':
+        case '4':
+        case '7':
+        case '8':
+            producer = "製作人：彭敘豪"
+            break;
+        case '3':
+        case '9':
+            producer = "製作人：方佑瑋"
+            break;
+        default:
+            break;
+    }
+    $('#producer').text(producer)
+
+    for (let i = 1; i <= 9; i++) {
+        $('#b' + i).css('color', 'blanchedalmond');
+        $('#b' + i).css('background-color', 'slategray');
+    }
+
+    $('#b' + d).css('color', 'slategray');
+    $('#b' + d).css('background-color', 'blanchedalmond');
+}
+
+
 function randomColor() {
     var color = '#';
     for (var i = 0; i < 6; i++) {
@@ -26,7 +60,7 @@ function randomColor() {
     return color;
 }
 // $(document).ready(function() {
-for (var i = 1; i < 6; i++) {
+for (var i = 1; i <= 6; i++) {
     // alert('#lab' + i)
     $('#lab0' + i).css('background-color', randomColor());
 }
@@ -72,3 +106,9 @@ $(function() {
         speed: 600
     });
 });
+
+
+function readMore() {
+    $('#readmore').remove()
+    $("#more").css('display', 'inline')
+}

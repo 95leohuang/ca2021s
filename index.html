@@ -14,7 +14,6 @@
     <header>
         <div id="nav">
             <ul>
-
                 <div class="dropdown">
                     <button class="dropbtn">課程</button>
                     <div class="dropdown-content">
@@ -276,6 +275,73 @@
             </div>
             <br>
             <!-- END OF LAB05 -->
+
+            <!-- FINAL -->
+            <div id="lab06" class="overlay">
+                <h4 class="heading">Final Project</h4>
+                <button onclick="playVideo1('6')" style="height:50px;width: 171px;background-color: rgb(103, 197, 221); color:rgb(13, 149, 228)"><img style="height: 32px;width: auto;" src="icon/vimeo.png"/>  Vimeo</button>
+                <button onclick="playVideo2('6')" style="height:50px;width: 171px;background-color: grey; color:black"><img style="height: 32px;width: auto;" src="icon/github.png"/>  Github</button>
+
+                <div id="video1_6">
+                    <iframe width="100%" height="720" src="https://player.vimeo.com/video/566517233" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="hidden" id="video2_6">
+                    <embed src="video/final_1080p.mp4" width="100%" height="720">
+                </div>
+
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <P class="descriptionTitle">心得：</P>
+                        <p>
+                            &nbsp;&nbsp;期末專案為3人一小組的小組專案，該期末專案把鬼滅之刃第19集竈門炭治郎領悟火之神神樂並對累使用的場景切割成11段，分別讓班上各組利用Unity做出其動畫。
+                            <br><br>&nbsp;&nbsp;而我們的小組為第11組，小組成員有：方佑瑋、彭敘豪、黃子洋。而我們被分配到的是最後竈門炭治郎砍下累的頭的片段。經過我們討論後，我們有對其片段分成8幕來完成。
+                            <span id="more">
+                                <br><br>&nbsp;&nbsp;我負責的是第1和第5幕。第1幕細節的部分主要有使用粒子特效做出火花和血的畫面。在火花的粒子特效上，我有使用pointLight，讓累有被燈光照到的效果， 而血的粒子特效是使用Unity Asset Store上免費的Asset：
+                                <a href="https://assetstore.unity.com/packages/vfx/particles/blood-gush-73426">Blood Gush </a>對該粒子特效做些微的調整達到有血的效果。另外我也有在炭治郎的耳飾加了script主要是調整他的rotation讓他有在飄動的感覺。在鏡頭控制的部分，有稍微對camera做一點位移，讓畫面有點晃動的感覺。
+                                <br><br>&nbsp;&nbsp;第5幕是炭治郎的刀產生火花的並划出一道有弧度劍痕，特效的部分是使用Unity Asset Store上的Asset :
+                                <a href="https://assetstore.unity.com/packages/vfx/particles/sci-fi-effects-20416">Sci-Fi Effects</a> 。 我也在這裡切成兩幕來製作，前面刀產生火花的部分就是用asset煙火和電漿效果製作。後面划出一道弧度劍痕的部分是使用trail和煙火完成，但一幕的角度十分難抓，我做了很久還是沒辦法做到可以跟動漫上一樣的劍痕弧度與相機角度。
+                                <br><br>&nbsp;&nbsp;另外第2、4、7幕和第3、8幕分別是由彭敘豪和方佑瑋製作，而第6幕則是使用彭敘豪之前lab5的作業。
+                            </span>
+                            <button onclick="readMore()" id="readmore">繼續閱讀...</button>
+                            <br>
+                        </p>
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <P class="descriptionTitle">Description：</P>
+                        <p>
+                            ▶︎　場景
+                            <br><a href="https://assetstore.unity.com/packages/3d/vegetation/oak-forest-environment-153314"> Oak Forest Environment</a>
+                            <br>▶︎ 特效
+                            <br><a href="https://assetstore.unity.com/packages/vfx/particles/blood-gush-73426">Blood Gush </a>
+                            <br><a href="https://assetstore.unity.com/packages/vfx/particles/sci-fi-effects-20416">Sci-Fi Effects</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="col-md-2">
+                        <button class="gif" id="b1" onclick="playGif('1')" style="background-color: blanchedalmond;color: slategray;">第1幕</button>
+                        <button class="gif" id="b2" onclick="playGif('2')">第2幕</button>
+                        <button class="gif" id="b3" onclick="playGif('3')">第3幕</button>
+                        <button class="gif" id="b4" onclick="playGif('4')">第4幕</button>
+                        <button class="gif" id="b5" onclick="playGif('5')">第5_1幕</button>
+                        <button class="gif" id="b6" onclick="playGif('6')">第5_2幕</button>
+                        <button class="gif" id="b7" onclick="playGif('7')">第6幕</button>
+                        <button class="gif" id="b8" onclick="playGif('8')">第7幕</button>
+                        <button class="gif" id="b9" onclick="playGif('9')">第8幕</button>
+                        <p></p>
+                        <p id="producer">製作人：黃子洋 </p>
+                    </div>
+                    <div class="col-md-10">
+                        <img id="gif" src="/gif/1.gif" alt="">
+                        <p><br></p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- END OF FINAL -->
         </div>
 
     </section>
@@ -284,8 +350,8 @@
     <!-- VISITOR -->
     <section id="visitor">
         <!-- https://www.freecounterstat.com" title="free counters" -->
-        <p>瀏覽次數：
-            <img src="https://counter6.stat.ovh/private/freecounterstat.php?c=gr7q1mcw2554g2aekjslq36j2nxz1xs5" title="website counters" alt="website counters"></p>
+        <!-- <p>瀏覽次數：
+            <img src="https://counter6.stat.ovh/private/freecounterstat.php?c=gr7q1mcw2554g2aekjslq36j2nxz1xs5" title="website counters" alt="website counters"></p> -->
     </section>
     <!-- END OF VISITOR -->
     <!-- partial -->
