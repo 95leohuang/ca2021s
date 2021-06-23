@@ -19,7 +19,7 @@ function playLink(d) {
 }
 
 function playGif(d) {
-    $('#gif').attr('src', '/gif/' + d + '.gif');
+    $('#gif').attr('src', './gif/' + d + '.gif');
     let producer = ""
     switch (d) {
         case '1':
