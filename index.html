@@ -4,326 +4,282 @@
 <head>
     <meta charset="utf-8">
     <title>電腦動畫作品集</title>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script src="http://d3js.org/d3.v6.min.js" charset="utf-8"></script>
-    <link href="style.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://fonts.googleapis.com/css?family=Fauna+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/earlyaccess/cwtexkai.css' rel='stylesheet' type='text/css'>
 </head>
 
-<body onload='location.href="#lab4"'>
+<body>
+    <header>
+        <div id="nav">
+            <ul>
 
-    <h1> 109-2 電腦動畫 作品集 </h1>
-
-    <div>
-        [檔案] <a href="https://github.com/95leohuang/ca2021s">https://github.com/95leohuang/ca2021s</a>
-        <hr> [網頁] <a href="https://95leohuang.github.io/ca2021s/">https://95leohuang.github.io/ca2021s</a>
-    </div>
-
-    <!-- lab1 -->
-    <span id="lab1">
-  <div  style="padding: 0%;">
-    <h3 style="margin: 0%;border-width: 0; text-align: left;" class="col-md-12"> lab 1: VRoid + Mixamo </h3>
-  
-  </div>
-  <div>
-    <p style="padding-left: 20px;font-size:24px; text-decoration: underline;">心得:</p>
-    <p style="padding-left: 50px; font-size:20px; text-decoration: underline;">模型製作&nbsp;：&nbsp;VRoid + Blender:</p>
-    <p style="padding-left: 50px; font-size:15px;">&nbsp;&nbsp;學習如何從VRoid中製作出想要的人物模型、在VRoid中完成製作後匯出成.vrm檔後，再將其匯入到Blender上進行轉檔的動作，使用Blender中開源的Cats Blender Plugin，把.vrm檔轉檔成支援Unity使用的.fbx檔。</p> 
-    <p style="padding-left: 50px; font-size:20px; text-decoration: underline;">角色動畫&nbsp;：&nbsp;Mixamo + actorcore</p>
-    <p style="padding-left: 50px; font-size:15px;">&nbsp;&nbsp;從Adobe mixamo大量的免費角色動畫檔中選擇適合使用的動畫，另外我也使用Reallusion actorcore中免費的角色動畫檔。</p> 
-    <p style="padding-left: 50px; font-size:20px; text-decoration: underline;">Unity&nbsp;：&nbsp;Sequence + Cinemachine + Recorder </p>
-    <p style="padding-left: 50px; font-size:15px;">&nbsp;&nbsp;利用Unity的工具和package完成動畫的製作與錄製，使用Sequence調整電腦動畫的時間軸結合Cinemachine攝影機的Plugin進行攝影機運鏡，最後再使用Unity Recorder把動畫錄製成影像檔。</p> 
-  </div>
-  <div style="padding:0%">
-    <span class="row"style="margin:0%">
-      <div class="col-md-6" style="margin: 0%;"> 
-        <p></p>
-        <h2 style="text-decoration: underline;">Video from：</h2>
-        <br>
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><img src="icon/youtube-favicon.ico"/>  Youtube</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><img src="icon/github-favicon.ico"/>  Github</button>
-          </li>
-        </ul>
-
-        <span class=" tab-content" id="myTabContent">
-          <span class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <iframe width="100%" height="720" src="https://www.youtube.com/embed/NxdwzCeK-sA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
-          </span>
-    <span class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            <embed src="video/firstcut.mp4" width="100%" height="720">
-          </span>
-    </span>
-    </div>
-
-    <div class="col-md-6" style="padding-left: 3%;margin: 0%;">
-        <br>
-        <h2 style="text-decoration: underline;">Description：</h2>
-        <br>
-        <p style="font-size:20px;">▶︎　時間戳</p>
-        0:00​ - Start
-        <br> 0:08​ - 第一個分鏡
-        <br> 0:32​ - 第一個分鏡
-        <br> 1:17 - 音樂結束
-        <br>
-        <br>
-        <p style="font-size:20px;">▶︎　音楽</p>
-        舞蹈音樂：<br><a href="https://youtu.be/cjTFoDZVNsk">日本和服 - 古典舞蹈 (speed*1.25)</a>
-        <br> 街道音效：
-        <br><a href="https://youtu.be/CF_C13iPvOg">Streets around Shibuya Station at night / 夜の渋谷 / Tokyo HD</a>
-        <br>
-        <br>
-        <p style="font-size:20px;">▶︎　場景</p>
-        <a href="https://assetstore.unity.com/packages/3d/environments/urban/japanese-alley-162907"> Unity Assets - Japanese Alley </a>
-        <br>
-        <br>
-        <p style="font-size:20px;">▶︎　角色動畫</p>
-        閒置動畫 ：<br><a href="https://actorcore.reallusion.com/free?asset=idle_251087">actorcore - Idle </a>
-        <br> 揮手動畫 ：<br><a href="https://www.mixamo.com/#/?page=1&query=standing+greeting">Mixamo - Standing Greeting </a>
-        <br> 舞蹈動畫 ：<br><a href="https://actorcore.reallusion.com/free?asset=dance-graceful_250999">actorcore - Dance graceful </a>
-        <br> 鞠躬動畫(炭治郎) ：<br><a href="https://www.mixamo.com/#/?page=1&query=quitck+formal+bow">Mixamo - Quick Formal Bow</a>
-        <br> 鞠躬動畫(禰豆子) ：<br><a href="https://www.mixamo.com/#/?page=1&query=thankful">Mixamo - Thankful</a>
-        <br>
-    </div>
-
-    </span>
-    </div>
-    </span>
-
-    <!-- lab2 -->
-    <span id="lab2">
-  <div  style="padding: 0%;">
-    <h3 style="margin: 0%;border-width: 0; text-align: left;" class="col-md-12"> lab 2: MMD + Mixamo </h3>
-  </div>
-  <div style="padding:0%">
-    <span class="row"style="margin:0%">
-      <div class="col-md-6" style="margin: 0%;"> 
-        <p></p>
-        <h2 style="text-decoration: underline;">Video from：</h2>
-        <br>
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab-lab02" data-bs-toggle="tab" data-bs-target="#home1-lab02" type="button" role="tab" aria-controls="home1-lab02" aria-selected="true"><img src="icon/vimeo-favicon.ico"/>  vimeo</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab1-lab02" data-bs-toggle="tab" data-bs-target="#profile1-lab02" type="button" role="tab" aria-controls="profile1-lab02" aria-selected="false"><img src="icon/github-favicon.ico"/>  Github</button>
-          </li>
-        </ul>
-
-        <span class=" tab-content" id="myTabContent">
-          <span class="tab-pane fade show active" id="home1-lab02" role="tabpanel" aria-labelledby="home-tab-lab02">
-            <iframe width="100%" height="720" src="https://player.vimeo.com/video/536110650" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> 
-          </span>
-    <span class="tab-pane fade" id="profile1-lab02" role="tabpanel" aria-labelledby="profile-tab1-lab02">
-            <embed src="video/lab02_720p.mp4" width="100%" height="720">
-          </span>
-    </span>
-    </div>
-
-    <div class="col-md-6" style="padding-left: 3%;margin: 0%;">
-        <br>
-        <h2 style="text-decoration: underline;">心得：</h2>
-        <p>lab2的作業主要是學習如何操作MMD。這是我第一次接觸MMD，因此比起使用unity來說需要花費更多的時間來學習與製作。</p>
-        <br>
-        <h2 style="text-decoration: underline;">Description：</h2>
-        <br>
-        <p style="font-size:20px;">▶︎　音楽</p>
-        <a href="https://drive.google.com/file/d/149SioSjtcWmCAlwhJDDAliIrjEjjEKFy/view?usp=sharing">  辉夜大小姐想让我告白 ED チカっとチカ千花っ♡ - 藤原千花角色歌 </a>
-        <br>
-        <iframe frameborder="0" width="400" height="50" src="https://drive.google.com/file/d/149SioSjtcWmCAlwhJDDAliIrjEjjEKFy/preview?usp=sharing"></iframe>
-        <br>
-        <br>
-        <p style="font-size:20px;">▶︎　背景</p>
-        <a href="https://bowlroll.net/file/141949"> RC式空域04-扭曲_ステージ配布 </a>
-        <br>
-        <br>
-    </div>
-
-    </span>
-    </div>
-    </span>
-
-    <!-- lab3 -->
-    <span id="lab3">
-  <div  style="padding: 0%;">
-    <h3 style="margin: 0%;border-width: 0; text-align: left;" class="col-md-12"> lab 3: three.js </h3>
-  </div>
-  <div style="padding:0%">
-    <span class="row"style="margin:0%">
-      <div class="col-md-6" style="margin: 0%;"> 
-        <p></p>
-        <h2 style="text-decoration: underline;">Video from：</h2>
-        <br>
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab-lab03" data-bs-toggle="tab" data-bs-target="#home1-lab03" type="button" role="tab" aria-controls="home1-lab03" aria-selected="true"><img src="icon/vimeo-favicon.ico"/>  vimeo</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab1-lab03" data-bs-toggle="tab" data-bs-target="#profile1-lab03" type="button" role="tab" aria-controls="profile1-lab03" aria-selected="false"><img src="icon/github-favicon.ico"/>  Github</button>
-          </li>
-        </ul>
-
-        <span class=" tab-content" id="myTabContent">
-          <span class="tab-pane fade show active" id="home1-lab03" role="tabpanel" aria-labelledby="home-tab-lab03">
-            <iframe width="100%" height="720" src="https://player.vimeo.com/video/541647970" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> 
-          </span>
-    <span class="tab-pane fade" id="profile1-lab03" role="tabpanel" aria-labelledby="profile-tab1-lab03">
-            <embed src="video/lab03_1080p.mp4" width="100%" height="720">
-          </span>
-    </span>
-    </div>
-
-    <div class="col-md-6" style="padding-left: 3%;margin: 0%;">
-        <p></p>
-        <h2 style="text-decoration: underline;">Web Demo：</h2>
-        <br>
-        <a href="lab03/index.html">link</a>
-        <span style="display: block; height: 20px;"></span>
-        <iframe width="100%" height="720" src="lab03/index.html" scrolling="no" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    </span>
-
-    <span class="row" style="margin:0%">
-      <div class="col-md-6" style="padding-left: 3%;margin: 0%;">
-        <br>
-        <h2 style="text-decoration: underline;"> 評分標準：</h2>
-      <ul>
-        <li>20%：音樂必須使用midi檔案，利用garage band等軟體生成鋼琴等樂器的MP3。</li>
-        <li>20%：使用OpenShot 等影片剪接軟體，製作無浮水印的影片</li>
-        <li>20%：pic in pic</li>
-        <li>20%：主角藤原千花 必須出現</li>
-        <li>10%：720p 解析度 1280x720,30fps</li>
-        <li>10%：發佈平台</li>
-        
-      </ul>
-      </div>
-      <div class="col-md-6" style="padding-left: 3%;margin: 0%;">
-        <br>
-        <h2 style="text-decoration: underline;">心得：</h2>
-        <p>lab3是學習three.js函式庫，這是一個非常強大的 webGL函式庫， 讓我們能夠將MMD的模型檔案(.pmx) 在瀏覽器中運行。讓藤原千花模型可以直接在瀏覽器中跳舞，使得網頁看起來更加活潑。</p> 
-        <br>
-        <p style="font-size:20px;">▶︎ 錄影方法 </p>
-        <p>recorder.min.js </p>        
-        <br>
-        <p style="font-size:20px;">▶︎　譜曲軟體 （MIDI編輯）</p>
-        <a href="https://musescore.org/zh-hant"> MuseScore: 免費的譜曲軟體 </a>
-        <p>樂器搭配：鋼琴（默認）、小提琴、拍手（敲擊樂）、低音薩克斯風 </p>
-        <br>
-        <p style="font-size:20px;">▶︎ 影片剪輯軟體 </p>
-        <a href="https://store.steampowered.com/app/1182920/Movavi_Video_Editor_Plus_2020__Video_Editing_Software/"> Movavi Video Editor Plus 2020 </a>
-        <br>
-        <br>
-
-      </div>
-  </span>
-    </span>
-    </div>
-
-
-
-
-    <!-- lab4 -->
-    <span id="lab4">
-      <div  style="padding: 0%;">
-        <h3 style="margin: 0%;border-width: 0; text-align: left;" class="col-md-12"> lab 4:  Unity 書記舞</h3>
-      </div>
-      <div style="padding:0%">
-        <span class="row"style="margin:0%">
-          <div class="col-md-6" style="margin: 0%;"> 
-            <p></p>
-            <h2 style="text-decoration: underline;">Video from：</h2>
-            <br>
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab-lab04" data-bs-toggle="tab" data-bs-target="#home1-lab04" type="button" role="tab" aria-controls="home1-lab04" aria-selected="true"><img src="icon/vimeo-favicon.ico"/>  vimeo</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="profile-tab1-lab04" data-bs-toggle="tab" data-bs-target="#profile1-lab04" type="button" role="tab" aria-controls="profile1-lab04" aria-selected="false"><img src="icon/github-favicon.ico"/>  Github</button>
-              </li>
+                <div class="dropdown">
+                    <button class="dropbtn">課程</button>
+                    <div class="dropdown-content">
+                        <a href="https://95leohuang.github.io/ca2021s/" class="scroller" data-offset="-140">電腦動畫(109-2)</a>
+                        <a href="https://95leohuang.github.io/vis2021s/" class="scroller" data-offset="-139">資料可視化(109-2)</a>
+                    </div>
+                </div>
+                <li><a href="#about" class="scroller" style="font-family: 'Fauna One', serif;" data-offset="-140">HOME</a></li>
+                <li><a href="#portfolio" class="scroller" style="font-family: 'Fauna One', serif;" data-offset="-139">PORTFOLIO</a></li>
             </ul>
-    
-            <span class=" tab-content" id="myTabContent">
-              <span class="tab-pane fade show active" id="home1-lab04" role="tabpanel" aria-labelledby="home-tab-lab04">
-                <iframe width="100%" height="720" src="https://player.vimeo.com/video/562934217" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> 
-              </span>
-    <span class="tab-pane fade" id="profile1-lab04" role="tabpanel" aria-labelledby="profile-tab1-lab04">
-                <embed src="video/lab04_1080p.mp4" width="100%" height="720">
-              </span>
-    </span>
-    </div>
+        </div>
+    </header>
 
-    <div class="col-md-6" style="padding-left: 3%;margin: 0%;">
-        <p></p>
-        <h2 style="text-decoration: underline;">心得：</h2>
-        <p>lab4利用Unity呈現出藤原千花跳書記舞的影片 - 先是利用MMD4Mecanim匯入藤原千花模型與書記舞舞蹈動作，然後結合Cinemachine做運鏡。因為有了lab 1的經驗，所以在做運鏡的時候快了許多（而且也只有一開始有運鏡）。</p>
-        <p>另外我使用了學校作為場景並把鏡頭運到老師的講台上，讓畫面有點像老師在看藤原千花跳舞的感覺。</p>
-        <br>
-        <h2 style="text-decoration: underline;">Description：</h2>
-        <br>
-        <p style="font-size:20px;">▶︎　場景</p>
-        <a href="https://assetstore.unity.com/packages/templates/packs/snaps-art-hd-school-158106"> Snaps Art HD | School</a>
-    </div>
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container" style="padding-bottom: 5%;">
+        </div>
+    </section>
+    <section id="about">
+        <!-- CONTAINER -->
+        <div class="container" style="padding-bottom: 5%;">
+            <h2>電腦動畫 (109-2)</h2>
+            <div class="row info">
+                <div class="col-sm-8">
+                    <table>
+                        <tr>
+                            <td>姓名：</td>
+                            <td>黃子洋</td>
+                        </tr>
+                        <tr>
+                            <td>學號：</td>
+                            <td>109598402</td>
+                        </tr>
+                        <tr>
+                            <td>班級：</td>
+                            <td>資工碩一</td>
+                        </tr>
+                    </table>
+                    <br> [檔案] <a href="https://github.com/95leohuang/ca2021s/" style="color: rgb(77, 100, 228);">https://github.com/95leohuang/ca2021s/</a>
+                    <hr> [網頁] <a href="https://95leohuang.github.io/ca2021s/" style="color: rgb(77, 100, 228);">https://95leohuang.github.io/ca2021s/</a>
+                    <p></p>
+                    <span class="signature">.leohuang</span>
+                </div>
 
-    </span>
+                <div class="col-md-4">
+                    <img src="https://media.zenfs.com/zh-tw/nownews.com/e05d9b3d296c28171063401a14a19dc3" style="height: 320px;" alt="Leo Huang" class="img-responsive img-circle">
+                </div>
+            </div>
+        </div>
+        <!-- END OF CONTAINER -->
+    </section>
+    <!-- END OF ABOUT -->
 
-    </span>
-    </div>
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+        <!-- lab1 -->
 
+        <!-- CONTAINER -->
+        <div class="container">
+            <h2>portfolio 作品集</h2>
+        </div>
+        <!-- END OF CONTAINER -->
+        <div id="portfolioContainer" class="container">
 
-    <!-- lab5 -->
-    <span id="lab5">
-      <div  style="padding: 0%;">
-        <h3 style="margin: 0%;border-width: 0; text-align: left;" class="col-md-12"> lab 5:  </h3>
-      </div>
-      <div style="padding:0%">
-        <span class="row"style="margin:0%">
-          <div class="col-md-6" style="margin: 0%;"> 
-            <p></p>
-            <h2 style="text-decoration: underline;">Video from：</h2>
+            <!-- LAB01 -->
+            <div id="lab01" class="overlay">
+                <h4 class="heading">LAB 01: VRoid + Mixamo</h4>
+                <button onclick="playVideo1('1')" style="height:50px;width: 171px;background-color: pink; color:rgb(245, 21, 21)"><img style="height: 32px;width: auto;" src="icon/youtube.png"/>  Youtube</button>
+                <button onclick="playVideo2('1')" style="height:50px;width: 171px;background-color: grey; color:black"><img style="height: 32px;width: auto;" src="icon/github.png"/>  Github</button>
+
+                <div id="video1_1">
+                    <iframe width="100%" height="720" src="https://www.youtube.com/embed/NxdwzCeK-sA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="hidden" id="video2_1">
+                    <embed src="video/lab01_1080p.mp4" width="100%" height="720">
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <p class="descriptionTitle">心得:</p>
+                        <p class="underline">模型製作&nbsp;：&nbsp;VRoid + Blender:</p>
+                        <p>&nbsp;&nbsp;學習如何從VRoid中製作出想要的人物模型、在VRoid中完成製作後匯出成.vrm檔後，再將其匯入到Blender上進行轉檔的動作，使用Blender中開源的Cats Blender Plugin，把.vrm檔轉檔成支援Unity使用的.fbx檔。</p>
+                        <p class="underline">角色動畫&nbsp;：&nbsp;Mixamo + actorcore</p>
+                        <p>&nbsp;&nbsp;從Adobe mixamo大量的免費角色動畫檔中選擇適合使用的動畫，另外我也使用Reallusion actorcore中免費的角色動畫檔。</p>
+                        <p class="underline">Unity&nbsp;：&nbsp;Sequence + Cinemachine + Recorder </p>
+                        <p>&nbsp;&nbsp;利用Unity的工具和package完成動畫的製作與錄製，使用Sequence調整電腦動畫的時間軸結合Cinemachine攝影機的Plugin進行攝影機運鏡，最後再使用Unity Recorder把動畫錄製成影像檔。</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p class="descriptionTitle">Description：</p>
+                    <p>
+                        ▶︎　時間戳
+                        <br> 0:00​ - Start
+                        <br> 0:08​ - 第一個分鏡
+                        <br> 0:32​ - 第一個分鏡
+                        <br> 1:17 - 音樂結束
+                        <br>▶︎　音楽
+                        <br>舞蹈音樂：<a href="https://youtu.be/cjTFoDZVNsk">日本和服 - 古典舞蹈 (speed*1.25)</a>
+                        <br> 街道音效：<a href="https://youtu.be/CF_C13iPvOg" style="font-size: 15px;">Streets around Shibuya Station at night / 夜の渋谷 / Tokyo HD</a>
+                        <br>▶︎　場景
+                        <br>Unity Assets: <a href="https://assetstore.unity.com/packages/3d/environments/urban/japanese-alley-162907"> Japanese Alley </a>
+                        <br>▶︎　角色動畫
+                        <br>閒置動畫 ：<a href="https://actorcore.reallusion.com/free?asset=idle_251087">actorcore-Idle </a>
+                        <br> 揮手動畫 ：<a href="https://www.mixamo.com/#/?page=1&query=standing+greeting">Mixamo-Standing Greeting </a>
+                        <br> 舞蹈動畫 ：<a href="https://actorcore.reallusion.com/free?asset=dance-graceful_250999">actorcore-Dance graceful </a>
+                        <br> 鞠躬動畫(炭治郎) ：<a href="https://www.mixamo.com/#/?page=1&query=quitck+formal+bow">Mixamo-QuickFormalBow</a>
+                        <br> 鞠躬動畫(禰豆子) ：<a href="https://www.mixamo.com/#/?page=1&query=thankful">Mixamo-Thankful</a>
+                    </p>
+
+                </div>
+            </div>
             <br>
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab-lab05" data-bs-toggle="tab" data-bs-target="#home1-lab05" type="button" role="tab" aria-controls="home1-lab05" aria-selected="true"><img src="icon/vimeo-favicon.ico"/>  vimeo</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="profile-tab1-lab05" data-bs-toggle="tab" data-bs-target="#profile1-lab05" type="button" role="tab" aria-controls="profile1-lab05" aria-selected="false"><img src="icon/github-favicon.ico"/>  Github</button>
-              </li>
-            </ul>
-    
-            <span class=" tab-content" id="myTabContent">
-              <span class="tab-pane fade show active" id="home1-lab05" role="tabpanel" aria-labelledby="home-tab-lab05">
-                <iframe width="100%" height="720" src="https://player.vimeo.com/video/563064379" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> 
-              </span>
-    <span class="tab-pane fade" id="profile1-lab05" role="tabpanel" aria-labelledby="profile-tab1-lab05">
-                <embed src="video/lab05_1080p.mp4" width="100%" height="720">
-              </span>
-    </span>
-    </div>
+            <!-- END OF LAB01 -->
 
-    <div class="col-md-6" style="padding-left: 3%;margin: 0%;">
-        <p></p>
-        <h2 style="text-decoration: underline;">心得：</h2>
-        <p>lab5 主要是各種特效的應用與，使用trail和粒子特效讓竈門炭治郎在砍下累頭部的時候有火之神神樂的劍痕特效</p>
-        <br>
-        <h2 style="text-decoration: underline;">Description：</h2>
-        <br>
-        <p style="font-size:20px;">▶︎　場景</p>
-        <a href="https://assetstore.unity.com/packages/3d/vegetation/oak-forest-environment-153314"> Oak Forest Environment</a>
-    </div>
+            <!-- LAB02 -->
+            <div id="lab02" class="overlay">
+                <h4 class="heading">LAB 02: MMD + Mixamo</h4>
+                <button onclick="playVideo1('2')" style="height:50px;width: 171px;background-color: rgb(103, 197, 221); color:rgb(13, 149, 228)"><img style="height: 32px;width: auto;" src="icon/vimeo.png"/>  Vimeo</button>
+                <button onclick="playVideo2('2')" style="height:50px;width: 171px;background-color: grey; color:black"><img style="height: 32px;width: auto;" src="icon/github.png"/>  Github</button>
 
-    </span>
+                <div id="video1_2">
+                    <iframe width="100%" height="720" src="https://player.vimeo.com/video/536110650" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="hidden" id="video2_2">
+                    <embed src="video/lab02_720p.mp4" width="100%" height="720">
+                </div>
 
-    </span>
-    </div>
+                <div class="col-md-12">
+                    <P class="descriptionTitle">心得：</P>
+                    <p>lab2的作業主要是學習如何操作MMD。這是我第一次接觸MMD，因此比起使用unity來說需要花費更多的時間來學習與製作。</p>
+                    <P class="descriptionTitle">Description：</P>
+                    <p>▶︎　音楽 : <a href="https://drive.google.com/file/d/149SioSjtcWmCAlwhJDDAliIrjEjjEKFy/view?usp=sharing">  辉夜大小姐想让我告白 ED チカっとチカ千花っ♡ - 藤原千花角色歌 </a></p>
+                    <iframe frameborder="0" width="400" height="50" src="https://drive.google.com/file/d/149SioSjtcWmCAlwhJDDAliIrjEjjEKFy/preview?usp=sharing"></iframe>
+
+                    <p>▶︎　背景 : <a href="https://bowlroll.net/file/141949"> RC式空域04-扭曲_ステージ配布 </a></p>
+
+                </div>
+            </div>
+            <br>
+            <!-- END OF LAB02 -->
+
+            <!-- LAB03 -->
+            <div id="lab03" class="overlay">
+                <h4 class="heading">LAB 3: three.js</h4>
+                <div>
+                    <button onclick="playVideo1('3')" style="height:50px;width: 171px;background-color: rgb(103, 197, 221); color:rgb(13, 149, 228)"><img style="height: 32px;width: auto;" src="icon/vimeo.png"/>  Vimeo</button>
+                    <button onclick="playVideo2('3')" style="height:50px;width: 171px;background-color: grey; color:black"><img style="height: 32px;width: auto;" src="icon/github.png"/>  Github</button>
+                    <button onclick="playLink('3')" style="height:50px;width: 230px;background-color: #ffd5c8; color:#ff8a65"><img style="height: 32px;width: auto;" src="icon/link.png"/>  Link (PC only)</button>
+                </div>
+                <div id="video1_3">
+                    <iframe width="100%" height="720" src="https://player.vimeo.com/video/541647970" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="hidden" id="video2_3">
+                    <embed src="video/lab03_1080p.mp4" width="100%" height="720">
+                </div>
+                <div class="hidden" id="link_3">
+                    <iframe width="100%" height="720" src="lab03/index.html" scrolling="no" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
 
 
+                <div>
+                    <div class="col-md-6">
+                        <div>
+                            <p class="descriptionTitle">評分標準：</p>
+                            <p>
+                                20%：音樂必須使用midi檔案，利用garage band等軟體生成鋼琴等樂器的MP3。
+                                <br>20%：使用OpenShot 等影片剪接軟體，製作無浮水印的影片
+                                <br>20%：pic in pic
+                                <br>20%：主角藤原千花 必須出現
+                                <br>10%：720p 解析度 1280x720,30fps
+                                <br>10%：發佈平台
+                            </p>
+                        </div>
+                    </div>
 
+                    <div class="col-md-6">
+                        <p class="descriptionTitle">心得：</p>
+                        <p>
+                            lab3是學習three.js函式庫，這是一個非常強大的 webGL函式庫， 讓我們能夠將MMD的模型檔案(.pmx) 在瀏覽器中運行。讓藤原千花模型可以直接在瀏覽器中跳舞，使得網頁看起來更加活潑。
+                            <br>▶︎ 錄影方法
+                            <br>recorder.min.js
+                            <br>▶︎　譜曲軟體 （MIDI編輯）
+                            <br><a href="https://musescore.org/zh-hant"> MuseScore: 免費的譜曲軟體 </a>
+                            <br>樂器搭配：鋼琴（默認）、小提琴、拍手（敲擊樂）、低音薩克斯風
+                            <br>▶︎ 影片剪輯軟體
+                            <br><a href="https://store.steampowered.com/app/1182920/Movavi_Video_Editor_Plus_2020__Video_Editing_Software/"> Movavi Video Editor Plus 2020 </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- END OF LAB03 -->
+
+            <!-- LAB04 -->
+            <div id="lab04" class="overlay">
+                <h4 class="heading">LAB 04: Unity 書記舞</h4>
+                <button onclick="playVideo1('4')" style="height:50px;width: 171px;background-color: rgb(103, 197, 221); color:rgb(13, 149, 228)"><img style="height: 32px;width: auto;" src="icon/vimeo.png"/>  Vimeo</button>
+                <button onclick="playVideo2('4')" style="height:50px;width: 171px;background-color: grey; color:black"><img style="height: 32px;width: auto;" src="icon/github.png"/>  Github</button>
+
+                <div id="video1_4">
+                    <iframe width="100%" height="720" src="https://player.vimeo.com/video/562934217" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="hidden" id="video2_4">
+                    <embed src="video/lab04_1080p.mp4" width="100%" height="720">
+                </div>
+
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <P class="descriptionTitle">心得：</P>
+                        <p>
+                            lab4利用Unity呈現出藤原千花跳書記舞的影片 - 先是利用MMD4Mecanim匯入藤原千花模型與書記舞舞蹈動作，然後結合Cinemachine做運鏡。因為有了lab 1的經驗，所以在做運鏡的時候快了許多（而且也只有一開始有運鏡）。
+                            <br> *另外我使用了學校作為場景並把鏡頭運到老師的講台上，讓畫面有點像老師在看藤原千花跳舞的感覺。
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <P class="descriptionTitle">Description：</P>
+                        <p>
+                            ▶︎　場景
+                            <br><a href="https://assetstore.unity.com/packages/templates/packs/snaps-art-hd-school-158106"> Snaps Art HD | School</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- END OF LAB04 -->
+
+            <!-- LAB05 -->
+            <div id="lab05" class="overlay">
+                <h4 class="heading">LAB 05: Unity 鬼滅之刃[19] 竈門炭治郎砍下累的頭</h4>
+                <button onclick="playVideo1('5')" style="height:50px;width: 171px;background-color: rgb(103, 197, 221); color:rgb(13, 149, 228)"><img style="height: 32px;width: auto;" src="icon/vimeo.png"/>  Vimeo</button>
+                <button onclick="playVideo2('5')" style="height:50px;width: 171px;background-color: grey; color:black"><img style="height: 32px;width: auto;" src="icon/github.png"/>  Github</button>
+
+                <div id="video1_5">
+                    <iframe width="100%" height="720" src="https://player.vimeo.com/video/563064379" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="hidden" id="video2_5">
+                    <embed src="video/lab05_1080p.mp4" width="100%" height="720">
+                </div>
+
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <P class="descriptionTitle">心得：</P>
+                        <p>lab5 主要是各種特效的應用，使用trail和粒子特效讓竈門炭治郎在砍下累頭部的時候有火之神神樂的劍痕特效</p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <P class="descriptionTitle">Description：</P>
+                        <p>
+                            ▶︎　場景
+                            <br><a href="https://assetstore.unity.com/packages/3d/vegetation/oak-forest-environment-153314"> Oak Forest Environment</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- END OF LAB05 -->
+        </div>
+
+    </section>
+    <!-- END OF PORTFOLIO -->
+
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://d3js.org/d3.v3.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
