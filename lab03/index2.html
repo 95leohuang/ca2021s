@@ -18,8 +18,8 @@
     <script type="text/javascript" src="./MMDPhysics.js"></script>
     <script type="text/javascript" src="./MMDAnimationHelper.js"></script>
     <script>
-        var WIDTH = 300;
-        var HEIGHT = 300;
+        var WIDTH = 475;
+        var HEIGHT = 273;
     </script>
     <script src="animation2.js"></script>
     <style>
@@ -29,7 +29,15 @@
             margin: 0;
             height: 100%;
             width: 100%;
-            /* background-color: #423a3a; */
+        }
+
+        #bg {
+            height: 100%;
+            width: 100%;
+            opacity: 0.65;
+            background-image: url(./bg.gif);
+            background-repeat: no-repeat;
+            background-position: bottom 10% right 0%;
         }
 
         #mycanvas {
@@ -43,6 +51,7 @@
 </head>
 
 <body>
+    <div id="bg"></div>
     <div style="text-align: center;">
         <div id="mycanvas"></div>
     </div>
