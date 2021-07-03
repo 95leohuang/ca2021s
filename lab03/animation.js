@@ -767,22 +767,24 @@ $
 								*/
 								//animationAction.setLoop(THREE.LoopOnce);
 								//animationAction.clampWhenFinished = true;
-								
-								myRecorder = new Recorder({
-									    el: "#targetCanvas",
-									    fps: 30,
-									    callback: function(w, url){
-									        var a = document.createElement("a")
-									        a.href= url
-									        a.download = "myRecord.webm"
-									        a.click()
-									    }                                   
-									})                              
-									myRecorder.setupTrack(function(){
-									                                       
+								         
 									    isHelperReady = true;
 									    isFirstPlay = false;
-									});
+								// myRecorder = new Recorder({
+								// 	    el: "#targetCanvas",
+								// 	    fps: 30,
+								// 	    callback: function(w, url){
+								// 	        var a = document.createElement("a")
+								// 	        a.href= url
+								// 	        a.download = "myRecord.webm"
+								// 	        a.click()
+								// 	    }                                   
+								// 	})                              
+								// 	myRecorder.setupTrack(function(){
+								// 	                                       
+								// 	    isHelperReady = true;
+								// 	    isFirstPlay = false;
+								// 	});
 									
 
 								
@@ -888,14 +890,14 @@ $
 							gridHelper.visible = true;
 							objectMain.visible = true;
 						
-							if(myRecorder !== null && recordBtn === null){
-							    recordBtn = myRecorder.renderButton({
-							        bottom: 1, //距離畫面底部的百分比
-							        right: 1.8, //距離畫面右側的百分比
-							        size: 60 //按鈕的大小，單位為 pixel
-							    });
-							    document.getElementById("mycanvas").appendChild(recordBtn);
-							}
+							// if(myRecorder !== null && recordBtn === null){
+							//     recordBtn = myRecorder.renderButton({
+							//         bottom: 1, //距離畫面底部的百分比
+							//         right: 1.8, //距離畫面右側的百分比
+							//         size: 60 //按鈕的大小，單位為 pixel
+							//     });
+							//     document.getElementById("mycanvas").appendChild(recordBtn);
+							// }
 								
 
 

@@ -544,7 +544,7 @@ $
 						pmxロード
 					*/
 					loader.load(
-						'./tda.pmx',
+						'./kizunaai.pmx',
 						function (object) {
 							objectMain = object;
 
@@ -582,7 +582,7 @@ $
 							/*
 								キャラ横位置
 							*/
-							objectMain.position.x = vmdDataValues.positionX;
+							objectMain.position.x = vmdDataValues.positionX + 2;
 
 							if (urlParameters.positionx) {
 								objectMain.position.x = parseInt(urlParameters.positionx);
