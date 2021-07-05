@@ -160,6 +160,7 @@ h1 .logo {
     from {
         -webkit-transform: scaleX(0%) scaleY(0%);
     }
+
     to {
         -webkit-transform: scaleX(100%) scaleY(100%);
     }
@@ -174,10 +175,11 @@ h1 .logo {
 #more {
     display: none;
 }
+
 #iframe_main {
     height: 100%;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
 
 }
 
@@ -191,6 +193,7 @@ h1 .logo {
     height: 273px;
     /* z-index: -1; */
 }
+
 #readmore {
     color: rgb(121, 200, 253);
     padding: 0;
@@ -288,6 +291,21 @@ h1 .logo {
     /* Set the bounds in which to center it, relative to its parent/container */
 }
 
+#nav:nth-child(n) :hover {
+    background: aquamarine;
+    color: black;
+}
+
+.dropbtn {
+    color: white;
+}
+
+#nav button {
+    background-color: transparent;
+    padding: 16px;
+    border: none;
+}
+
 .AbsoluteFullCenter {
     z-index: 2000;
     height: 100%;
@@ -319,7 +337,8 @@ h1 .logo {
     margin-top: 0;
     padding-top: 0;
     padding-bottom: 2%;
-    width: 10%;
+    text-align: center;
+    width: 100%;
     color: white;
 }
 
@@ -753,10 +772,12 @@ h1 .logo {
         margin-bottom: 10px;
         min-height: 400px;
     }
+
     #portfolio .overlay {
         width: 100%;
         height: auto;
     }
+
     #portfolio section:hover .overlay .heading span {
         -webkit-transform: rotate(90deg);
         top: 70px;
@@ -770,39 +791,50 @@ h1 .logo {
         font-size: 18px;
         text-align: center;
     }
+
     h2 {
         margin-top: 80px;
     }
+
     input {
         text-align: center;
     }
+
     #about img {
         display: block;
         margin: 0 auto;
         width: 30%;
     }
+
     #about .info {
         flex-direction: column-reverse;
     }
+
     #skill-set .skills {
         margin-top: 20px;
     }
+
     form {
         text-align: left;
     }
+
     #portfolio .description p {
         margin-top: 40px;
     }
+
     #portfolio section {
         font-size: 10px;
     }
+
     #portfolio .overlay>* {
         font-size: 200%;
     }
+
     #portfolio p,
     h6 {
         text-align: left;
     }
+
     #contact textarea {
         width: 90%;
     }
@@ -812,46 +844,58 @@ h1 .logo {
     #home nav {
         width: inherit;
     }
+
     #about .signature {
         float: none;
     }
+
     #portfolio h2 {
         margin-bottom: 0;
     }
+
     #portfolio section img {
         display: none;
     }
+
     #portfolio section {
         width: 100%;
     }
+
     #portfolio .description>* {
         display: block;
     }
+
     #portfolio .description {
         display: table-footer-group;
     }
+
     #portfolio .heading {
         display: table-header-group;
         font-size: 180%;
         text-align: left;
     }
+
     #portfolio .overlay {
         min-height: auto;
         padding: 20px;
     }
+
     #portfolio .description {
         top: 100px;
         position: static;
     }
+
     #portfolio section {
         min-height: auto;
     }
+
     #portfolio section:hover .overlay .heading {
         position: relative;
         top: -0px;
         color: white;
         -webkit-transition: none;
     }
+
     #portfolio .heading span {
         display: none;
     }
@@ -862,22 +906,28 @@ h1 .logo {
         display: block;
         width: 100%;
     }
+
     .social-links {
         width: 100%;
     }
+
     h1 {
         font-size: 300%;
     }
+
     #about img {
         width: 60%;
     }
+
     #skill-set #web-development-skills::before {
         display: none;
     }
+
     #skill-set .skills {
         width: 100%;
         display: block;
     }
+
     #portfolio .overlay {
         height: 70%;
     }

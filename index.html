@@ -14,19 +14,16 @@
 <body>
     <header>
         <div id="nav">
-            <ul>
-                <div class="dropdown">
-                    <button class="dropbtn">課程</button>
-                    <div class="dropdown-content">
-                        <a href="https://95leohuang.github.io/ca2021s/" data-offset="-140">電腦動畫(109-2)</a>
-                        <a href="https://95leohuang.github.io/vis2021s/" data-offset="-139">資料可視化(109-2)</a>
-                    </div>
+            <div class="dropdown">
+                <button class="dropbtn">課程</button>
+                <div class="dropdown-content">
+                    <a href="https://95leohuang.github.io/ca2021s/" data-offset="-140">電腦動畫(109-2)</a>
+                    <a href="https://95leohuang.github.io/vis2021s/" data-offset="-139">資料可視化(109-2)</a>
                 </div>
-                <li><a href="#about" class="scroller" style="font-family: 'Fauna One', serif;"
-                        data-offset="-140">HOME</a></li>
-                <li><a href="#portfolio" class="scroller" style="font-family: 'Fauna One', serif;"
-                        data-offset="-139">PORTFOLIO</a></li>
-            </ul>
+            </div>
+
+            <button class="dropbtn" onclick="scrolltoID('about')" data-offset="-140">HOME</button>
+            <button class="dropbtn" onclick="scrolltoID('portfolio')" data-offset="-139">PORTFOLIO</button>
         </div>
     </header>
 
@@ -87,11 +84,9 @@
             <!-- LAB01 -->
             <div id="lab01" class="overlay">
                 <h4 class="heading">LAB 01: VRoid + Mixamo</h4>
-                <button onclick="playVideo1('1')"
-                    style="background-color: pink; color:rgb(245, 21, 21)" class="col-md-2"><img
-                        style="height: 32px;width: auto;" src="icon/youtube.png" /> Youtube</button>
-                <button onclick="playVideo2('1')"
-                    style="background-color: grey; color:black" class="col-md-2"><img
+                <button onclick="playVideo1('1')" style="background-color: pink; color:rgb(245, 21, 21)"
+                    class="col-md-2"><img style="height: 32px;width: auto;" src="icon/youtube.png" /> Youtube</button>
+                <button onclick="playVideo2('1')" style="background-color: grey; color:black" class="col-md-2"><img
                         style="height: 32px;width: auto;" src="icon/github.png" /> Github</button>
 
                 <div id="video1_1">
@@ -100,7 +95,9 @@
                         allowfullscreen></iframe>
                 </div>
                 <div class="hidden" id="video2_1">
-                    <embed src="video/lab01_1080p.mp4" width="100%" height="720">
+                    <video width="100%" height="720" controls preload="none">
+                        <source src="video/lab01_1080p.mp4">
+                    </video>
                 </div>
                 <div class="col-md-6">
                     <div>
@@ -151,11 +148,9 @@
             <!-- LAB02 -->
             <div id="lab02" class="overlay">
                 <h4 class="heading">LAB 02: MMD + Mixamo</h4>
-                <button onclick="playVideo1('2')"
-                    style="background-color: rgb(103, 197, 221); color:rgb(13, 149, 228)" class="col-md-2"><img
-                        style="height: 32px;width: auto;" src="icon/vimeo.png" /> Vimeo</button>
-                <button onclick="playVideo2('2')"
-                    style="background-color: grey; color:black" class="col-md-2"><img
+                <button onclick="playVideo1('2')" style="background-color: rgb(103, 197, 221); color:rgb(13, 149, 228)"
+                    class="col-md-2"><img style="height: 32px;width: auto;" src="icon/vimeo.png" /> Vimeo</button>
+                <button onclick="playVideo2('2')" style="background-color: grey; color:black" class="col-md-2"><img
                         style="height: 32px;width: auto;" src="icon/github.png" /> Github</button>
 
                 <div id="video1_2">
@@ -164,7 +159,9 @@
                         allowfullscreen></iframe>
                 </div>
                 <div class="hidden" id="video2_2">
-                    <embed src="video/lab02_720p.mp4" width="100%" height="720">
+                    <video width="100%" height="720" controls preload="none">
+                        <source src="video/lab02_720p.mp4">
+                    </video>
                 </div>
 
                 <div class="col-md-6">
@@ -193,12 +190,10 @@
                     <button onclick="playVideo1('3')"
                         style="background-color: rgb(103, 197, 221); color:rgb(13, 149, 228)" class="col-md-2"><img
                             style="height: 32px;width: auto;" src="icon/vimeo.png" /> Vimeo</button>
-                    <button onclick="playVideo2('3')"
-                        style="background-color: grey; color:black" class="col-md-2"><img
+                    <button onclick="playVideo2('3')" style="background-color: grey; color:black" class="col-md-2"><img
                             style="height: 32px;width: auto;" src="icon/github.png" /> Github</button>
-                    <button onclick="playLink('3')"
-                        style="background-color: #ffd5c8; color:#ff8a65"class="col-md-2"><img
-                            style="height: 32px;width: auto;" src="icon/link.png" /> Link</button>
+                    <button onclick="playLink('3')" style="background-color: #ffd5c8; color:#ff8a65"
+                        class="col-md-2"><img style="height: 32px;width: auto;" src="icon/link.png" /> Link</button>
                 </div>
                 <div id="video1_3">
                     <iframe width="100%" height="720" src="https://player.vimeo.com/video/541647970" frameborder="0"
@@ -206,7 +201,9 @@
                         allowfullscreen></iframe>
                 </div>
                 <div class="hidden" id="video2_3">
-                    <embed src="video/lab03_1080p.mp4" width="100%" height="720">
+                    <video width="100%" height="720" controls preload="none">
+                        <source src="video/lab03_1080p.mp4">
+                    </video>
                 </div>
                 <div class="hidden" id="link_3">
                     <iframe width="100%" height="720" src="lab03/index.html" scrolling="no" frameborder="0"
@@ -257,11 +254,9 @@
             <!-- LAB04 -->
             <div id="lab04" class="overlay">
                 <h4 class="heading">LAB 04: Unity 書記舞</h4>
-                <button onclick="playVideo1('4')"
-                    style="background-color: rgb(103, 197, 221); color:rgb(13, 149, 228)" class="col-md-2"><img
-                        style="height: 32px;width: auto;" src="icon/vimeo.png" /> Vimeo</button>
-                <button onclick="playVideo2('4')"
-                    style="background-color: grey; color:black" class="col-md-2"><img
+                <button onclick="playVideo1('4')" style="background-color: rgb(103, 197, 221); color:rgb(13, 149, 228)"
+                    class="col-md-2"><img style="height: 32px;width: auto;" src="icon/vimeo.png" /> Vimeo</button>
+                <button onclick="playVideo2('4')" style="background-color: grey; color:black" class="col-md-2"><img
                         style="height: 32px;width: auto;" src="icon/github.png" /> Github</button>
 
                 <div id="video1_4">
@@ -270,7 +265,9 @@
                         allowfullscreen></iframe>
                 </div>
                 <div class="hidden" id="video2_4">
-                    <embed src="video/lab04_1080p.mp4" width="100%" height="720">
+                    <video width="100%" height="720" controls preload="none">
+                        <source src="video/lab04_1080p.mp4">
+                    </video>
                 </div>
 
                 <div class="col-md-12">
@@ -300,11 +297,9 @@
             <!-- LAB05 -->
             <div id="lab05" class="overlay">
                 <h4 class="heading">LAB 05: Unity 鬼滅之刃[19] 竈門炭治郎砍下累的頭</h4>
-                <button onclick="playVideo1('5')"
-                    style="background-color: rgb(103, 197, 221); color:rgb(13, 149, 228)" class="col-md-2"><img
-                        style="height: 32px;width: auto;" src="icon/vimeo.png" /> Vimeo</button>
-                <button onclick="playVideo2('5')"
-                    style="background-color: grey; color:black" class="col-md-2"><img
+                <button onclick="playVideo1('5')" style="background-color: rgb(103, 197, 221); color:rgb(13, 149, 228)"
+                    class="col-md-2"><img style="height: 32px;width: auto;" src="icon/vimeo.png" /> Vimeo</button>
+                <button onclick="playVideo2('5')" style="background-color: grey; color:black" class="col-md-2"><img
                         style="height: 32px;width: auto;" src="icon/github.png" /> Github</button>
 
                 <div id="video1_5">
@@ -313,7 +308,9 @@
                         allowfullscreen></iframe>
                 </div>
                 <div class="hidden" id="video2_5">
-                    <embed src="video/lab05_1080p.mp4" width="100%" height="720">
+                    <video width="100%" height="720" controls preload="none">
+                        <source src="video/lab05_1080p.mp4">
+                    </video>
                 </div>
 
                 <div class="col-md-12">
@@ -339,11 +336,9 @@
             <!-- FINAL -->
             <div id="lab06" class="overlay">
                 <h4 class="heading">Final Project</h4>
-                <button onclick="playVideo1('6')"
-                    style="background-color: rgb(103, 197, 221); color:rgb(13, 149, 228)" class="col-md-2"><img
-                        style="height: 32px;width: auto;" src="icon/vimeo.png" /> Vimeo</button>
-                <button onclick="playVideo2('6')"
-                    style="background-color: grey; color:black" class="col-md-2"><img
+                <button onclick="playVideo1('6')" style="background-color: rgb(103, 197, 221); color:rgb(13, 149, 228)"
+                    class="col-md-2"><img style="height: 32px;width: auto;" src="icon/vimeo.png" /> Vimeo</button>
+                <button onclick="playVideo2('6')" style="background-color: grey; color:black" class="col-md-2"><img
                         style="height: 32px;width: auto;" src="icon/github.png" /> Github</button>
 
                 <div id="video1_6">
@@ -352,7 +347,9 @@
                         allowfullscreen></iframe>
                 </div>
                 <div class="hidden" id="video2_6">
-                    <embed src="video/final_1080p.mp4" width="100%" height="720">
+                    <video width="100%" height="720" controls preload="none">
+                        <source src="video/final_1080p.mp4">
+                    </video>
                 </div>
 
                 <div class="col-md-12">
@@ -423,18 +420,19 @@
 
     </section>
     <!-- END OF PORTFOLIO -->
-    
+
     <!-- CHIKADANCE_IFRAME -->
     <div id='idiv'>
-        <iframe id="iframe_main"  frameborder="0" scrolling="no" src="./lab03/index2.html" ></iframe>
-   </div>
-   <!-- END OF CHIKADANCE_IFRAME -->
+        <iframe id="iframe_main" frameborder="0" scrolling="no" src="./lab03/index2.html"></iframe>
+    </div>
+    <!-- END OF CHIKADANCE_IFRAME -->
 
     <!-- VISITOR -->
     <section id="visitor">
         <!-- https://www.freecounterstat.com" title="free counters" -->
         <p>瀏覽次數：
-            <!-- <img src="https://counter6.stat.ovh/private/freecounterstat.php?c=gr7q1mcw2554g2aekjslq36j2nxz1xs5" title="website counters" alt="website counters"></p> -->
+            <img src="https://counter6.stat.ovh/private/freecounterstat.php?c=gr7q1mcw2554g2aekjslq36j2nxz1xs5"
+                title="website counters" alt="website counters"></p>
     </section>
     <!-- END OF VISITOR -->
     <!-- partial -->
